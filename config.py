@@ -17,5 +17,9 @@ class ConfigMixin:
         config.read(self.get_config_path())
         return config
 
+    def goto_vault(self):
+        os.chdir(self.vault_path)
+
     def __init__(self):
         self.vault_path = self.config["vault"]["path"]
+        self.goto_vault()

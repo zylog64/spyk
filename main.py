@@ -1,5 +1,5 @@
 import argparse
-from search import Searcher
+from note import Searcher
 
 parser = argparse.ArgumentParser()
 parser.add_argument("note", help="Name of the note you want to read")
