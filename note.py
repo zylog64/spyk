@@ -20,6 +20,7 @@ class Searcher(ConfigMixin):
             if os.path.isdir(entry_path):
                 if note_path := self.search_dirs(note, entry_path):
                     return note_path
+        return None
 
 
 class Reader(ConfigMixin):
